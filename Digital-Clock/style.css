@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.2s ease;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(153, 255, 221);
+    padding: 0px 20px;
+}
+
+section.dark{
+    background: rgb(32, 32, 32);
+}
+
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    max-width: 560px;
+    width: 100%;
+    background: rgb(112, 177, 92);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    position: relative;
+}
+
+section.dark .container{
+    background: rgb(69, 69, 69);
+}
+
+section .container .icons i{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    background: rgb(84, 84, 84);
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+section .container .icons i:hover{
+    background: black;
+    transform: scale(1.2);
+}
+
+section.dark .container .icons i{
+    background: white;
+    color: rgb(0, 0, 0);
+}
+
+h2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-70px);
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+section.dark .container h2{
+    color: white;
+}
+
+.container .icons i.fa-sun{
+    opacity: 0;
+    pointer-events: none;
+}
+
+section.dark .container .icons i.fa-sun{
+    opacity: 1;
+    pointer-events: auto;
+    font-size: 16px;
+}
+
+section .container .time{
+    display: flex;
+    align-items: center;
+}
+
+.container .time .time-colon:hover{
+    transform: scale(1.28);
+    transition: all 0.1s ease-in-out;
+}
+
+.container .time .time-colon{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.time .am_pm{
+    position: absolute;
+    top: 50px;
+    right: 65px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.time .time-colon .time-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(227, 239, 157);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+    color: rgb(49, 49, 49);
+}
+
+.time .time-colon .time-text:hover{
+    color: black;
+}
+
+section.dark .time .time-colon .time-text{
+    background: rgb(40, 40, 40);
+}
+
+.time .time-colon .time-text,
+.time .time-colon .colon{
+    font-size: 30px;
+    font-weight: 600;
+}
+section.dark .time .time-text .num,
+section.dark .time .time-colon .text,
+section.dark .time .time-colon,
+section.dark .am_pm,
+section.dark .time .colon{
+    color: white;
+}
+
+.colon{
+    font-size: 50px;
+    margin: 0px 10px;
+}
+
+.time .time-colon .time-text .text{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}

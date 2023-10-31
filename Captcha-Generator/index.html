@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Generator</title>
+    <script src="https://kit.fontawesome.com/09068bdb38.js" ></script>    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>Captcha Generator</header>
+        <div class="input_field captcha_box">
+            <input type="text" value="5  X  0  h  9  a" disabled>
+            <button class="refresh_button">
+                <i class='fa-solid fa-rotate-right'></i>            
+            </button>
+        </div>
+        <div class="input_field captcha_input">
+            <input type="text" placeholder="Enter the Captcha">
+        </div>
+        <div class="message">Entered Captcha is correct</div>
+        <div class="input_field button disabled">
+            <button>Submit Captcha</button>
+        </div>    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
